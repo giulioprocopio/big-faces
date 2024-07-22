@@ -1,0 +1,9 @@
+# Dev
+.env
+._*
+
+# Volumes
+**/*.volume/
+
+# VSCode
+.vscode/
