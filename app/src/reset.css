@@ -10,7 +10,8 @@
     margin: 0;
 }
 
-/* Typographic tweaks. Add accessible line-height and improve text rendering. */
+/* Typographic tweaks.  Add accessible line-height and improve text 
+   rendering. */
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
