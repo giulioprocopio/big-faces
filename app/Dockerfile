@@ -3,16 +3,16 @@ FROM node:alpine
 WORKDIR /main
 
 # Update package list and install dependencies.
-COPY package.json package-lock.json ./
-RUN npm install
+COPY package.json yarn.lock ./
+RUN yarn install
 
 COPY . .
 
-RUN npm run build --production
+RUN yarn build --prod
 
-RUN npm install -g serve
+RUN yarn global add serve
 
 EXPOSE 8081
 
-#CMD ["npm", "start"]
+#CMD ["yarn", "start"]
 CMD ["serve", "-s", "build", "-l", "8081"]
