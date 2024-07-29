@@ -2,6 +2,20 @@
 .env
 ._*
 
+# Node
+node_modules/
+.pnp.js
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+
 # Volumes
 **/*.volume/
 
